@@ -1,0 +1,129 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static '/css/index.css' %}">
+</head>
+<body class="wide">
+
+    <style>
+        .main-container{
+            display: grid;
+            grid-template-columns: 2fr 5fr;
+        }
+        .navbar-dark{
+            background:#079cc6 ;
+            color: white;
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+        }
+        
+    </style>
+
+<nav class="navbar navbar-dark navbar-expand-lg bg-body-primary" >
+    <div class="container-fluid" >
+      
+      <button class="navbar-toggler" class="btn btn-primary  position-relative" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+      <!--    <li class="nav-item">
+             <small class="btn btn-block  btn-lg">Hello</small> <span><a href="{% url 'index_page' %}">{{request.user}}</a></span>
+          </li> -->
+          
+    </div>
+    <div class="btn btn-block bg-white  btn-lg">
+        <p ><a href="{% url 'logout_page' %}" >Logout</a></p>
+    </div>
+    
+  </nav>
+  
+<!--Main page begins-->
+<div class="main-container">
+
+    <!--Side bar begins-->
+    <div class="side_bar-container">
+       <h3>
+        WELCOME <br> to <br>
+        ADMIN PORTAL
+       </h3>
+    </div>
+<!--Side bar ends-->
+
+<!--Pannel Container begins-->
+    <div class="pannel-container">
+
+<!--Flex Container begins-->        
+<div class="flex-container">
+
+        <div class="flex-box">
+                <i class="fa-solid fa-bed  fa-2x"></i>
+               <a href="{% url 'add-patient' %}"><p>Patient Details</p></a>
+        </div>
+
+        <div class="flex-box">
+              <i class="fa-solid fa-user-doctor  fa-2x"></i>
+              <a href="{% url 'doctor' %}">
+              <p>Doctor</p></a>
+        </div>
+
+         <div class="flex-box">
+                <i class="fa-solid fa-book-open-reader fa-2x"></i>
+                <a href="{% url 'meet' %}">
+                <p>Appointment</p></a>
+        </div>
+
+         <div class="flex-box">
+                <i class="fa-solid fa-pen  fa-2x"></i> 
+                <a href=""><p>Contact</p></a>
+        </div>
+
+        <div class="flex-box">
+                <i class="fa-solid fa-phone-volume  fa-2x"></i>
+                <a href="{% url 'contact' %}">
+                <p>Contact</p></a>
+        </div>
+
+        <div class="flex-box">
+                <i class="fa-solid fa-users-line  fa-2x"></i>
+                <a href="{% url 'in-patient' %}">
+                <p>In-Patient</p></a>
+        </div>
+
+
+        <div class="flex-box">
+              <i class="fa-solid fa-person-walking-luggage  fa-2x"></i>
+              <a href="{% url 'out-patient' %}">
+              <p>Out-Patient</p></a>
+        </div>
+
+            
+        <div class="flex-box">
+                <i class="fa-solid fa-person-walking-luggage  fa-2x"></i>
+                <a href=""><p>Out-Patient</p></a>
+         </div>
+
+            
+        </div>
+<!--Flex Container ends--> 
+        
+
+    </div>
+<!--Pannel Container ends-->
+
+</div>
+<!--Main Container ends-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

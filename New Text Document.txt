@@ -1,0 +1,9 @@
+Admin: professor
+password : diag
+email: kerematengcollins93@gmail.com
+
+User:Collins
+psd: !@Password123
+
+User: Sarah
+psd:hackit%@123

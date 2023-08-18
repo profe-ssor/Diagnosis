@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+html{
+    font-size: 16px;
+}
+body{
+    margin: 0px;
+    min-height: 95vh;
+    width: 100%;
+	background:#D8DFEE;
+    
+}
+/* Navbar begins
+*
+*/
+.navbar{
+    margin-top: 20px;
+    padding: 1%;
+}
+.btn{
+    text-decoration: none;
+ }
+
+/* Navbar ends */
+
+
+/* Main-Container begins
+*
+*/
+.main-container{
+    margin-top: 30px;
+}
+
+/* Main-Container ends
+*
+*/
+
+
+
+/* Flex-Container begins
+*
+*/
+.flex-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 110px;
+
+}
+
+.flex-box{
+    width: 200px;
+    height: 150px;
+    
+    color: blue;
+    font-size: 25px;
+   text-align: center;
+    line-height:75px;
+    background: #fcf7fb;
+    margin: 10px;
+    cursor: pointer;
+}
+
+i{
+    font-size: 30px;
+    color: #079cc6;
+    cursor: pointer;
+}
+
+/* Flex-Container ends
+*
+*/
+
+
+/* Side- Ber begins
+*
+ */
+
+.side_bar-container{
+    width:40% ;
+    margin-left: 20px;
+    justify-content: center;
+    background: #079cc6;
+    color: white;  
+}
+.side_bar-container h3{
+    padding: 40px;
+    color: white;
+    padding:2%;
+
+}
+
+h3{
+    text-align: center;
+    position: relative;
+    left: 5%;
+    top: 40%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* Side- Ber ends
+*
+*/
+
